@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Kashish Gautam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #000; color: #fff; font-family: 'Poppins', sans-serif; }
+    /* Navbar */
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: #000;
+      animation: fadeDown 1s;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: red;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .header-text {
+      text-align: center;
+      padding: 10px 20px;
+      animation: fadeIn 1.2s;
+    }
+
+    main { display: flex; flex-wrap: wrap; max-width: 1000px; margin: 40px auto; padding: 20px; }
+    .about-left { flex: 1; min-width: 300px; text-align: center; }
+    .about-left img { width: 100%; max-width: 400px; border-radius: 12px; }
+    .about-right { flex: 1; min-width: 300px; padding: 20px; }
+    .about-right h2 { color: red; margin-bottom: 20px; }
+    .about-right ul { list-style: none; line-height: 2; }
+    .about-right ul li span { color: red; margin-right: 5px; }
+.footer {
+      background: #222;
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+    }
+    .footer .footer-links {
+      margin-bottom: 1rem;
+    }
+    .footer .footer-links a {
+      color: #fff;
+      margin: 0 1rem;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer .footer-links a:hover {
+      color: red;
+    }
+    .footer .social-links a {
+      color: #fff;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer .social-links a:hover {
+      color: #e1306c;
+    }
+
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.2s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="fade-in">
+ <header>
+    <h1>Kashish Gautam</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="portfolio_html.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <div class="about-left">
+      <img src="1.jpg" alt="Kashish Gautam">
+    </div>
+    <div class="about-right">
+      <h2>Model Details</h2>
+      <ul>
+        <li><span>Name:</span> Kashish Gautam</li>
+        <li><span>Height:</span> 5'3"</li>
+        <li><span>Weight:</span> 51 kg</li>
+        <li><span>Bust:</span> 34"</li>
+        <li><span>Waist:</span> 30"</li>
+        <li><span>Hips:</span> 32"</li>
+        <li><span>Shoe Size:</span> 6</li>
+        <li><span>Eye Color:</span> Brown</li>
+        <li><span>Hair Color:</span>Creamy Brown</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer fade-in" style="animation-delay:1s;">
+  <div class="footer-content" style="max-width: 900px; margin: 0 auto;">
+    
+    <!-- Bio -->
+    <p style="margin-bottom: 1.2rem; font-size: 0.95rem; color: #bbb;">
+      Kashish Gautam is an emerging fashion model focused on editorial, runway, and commercial work, bringing elegance and authenticity to every frame.
+    </p>
+    
+    <!-- Social and Contact -->
+    <div class="footer-contact" style="margin-bottom: 1rem;">
+      <a href="kashishg2231@gmail.com" style="color: red; font-size: 0.95rem; text-decoration: none;">📩 kashishg2231@gmail.com</a>
+    </div>
+
+    <div class="social-links" style="margin-bottom: 1rem;">
+      <a href="https://www.instagram.com/ms_kashish_01?igsh=MTdiYzNoMHl6bmEybA==" target="_blank" aria-label="Instagram">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links" style="margin-bottom: 1rem;">
+      <a href="home.html">Home</a>
+      <a href="portfolio_html.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" style="
+      margin-top: 1rem;
+      padding: 8px 16px;
+      background: red;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;">
+      ↑ Scroll to Top
+    </button>
+
+    <!-- Copyright -->
+    <p style="margin-top: 1.5rem; font-size: 0.85rem;">© 2025 Kashish Gautam. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script>
+    // Animation delay for fade-in
+    document.querySelectorAll('.fade-in').forEach((el, i) => {
+      el.style.animationDelay = (i * 0.2) + 's';
+    });
+
+    // Sticky header on scroll and logo-circle toggle
+    const header = document.getElementById('main-header');
+    const logoCircle = document.getElementById('logo-circle');
+    const logo = header.querySelector('.logo');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 60) {
+        header.classList.add('scrolled');
+        logoCircle.style.display = 'flex';
+        logo.style.display = 'none';
+      } else {
+        header.classList.remove('scrolled');
+        logoCircle.style.display = 'none';
+        logo.style.display = 'inline';
+      }
+    });
+
+    // Scroll to top when logo-circle is clicked
+    logoCircle.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  <script src="home_java.js"></script>
+</body>
+</html>
